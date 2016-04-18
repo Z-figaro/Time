@@ -8,13 +8,13 @@
 
 #import "TodayView.h"
 #import <UIKit/UIKit.h>
-
+#import "GoalCell.h"
 
 
 @interface TodayView (){
     
-    NSArray *dataSource;
-//    HProgressView * pView;
+    NSArray *data;
+
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;/**< 目标表格视图 */
 
@@ -39,9 +39,6 @@
     [self initUserInterface];
   
     
-//    pView = [[HProgressView alloc] initWithFrame:CGRectMake(50, 100, 200, 40)];
-//    [self.view addSubview:pView];
-    
   
 }
 
@@ -61,6 +58,7 @@
     _bottomView.layer.cornerRadius = 10;
     [self progressView];
     [self progressLabel];
+    
     //TODO:100是以后传入的投资时间
 //    [self setValidTime];
     _validTime = 50000;
@@ -91,25 +89,12 @@
 
 #pragma mark - 表格视图
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //表格视图重用标识符
-    static NSString *const KUITabelViewCellIdentifier = @"cellIdentifier";
-    // 在表格视图队列中根据标识符寻找可重用的单元格
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:KUITabelViewCellIdentifier];
-    // 如果没有找到，则新建
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:KUITabelViewCellIdentifier];
-    }
     
-    //set cell.textlabel
-    cell.textLabel.text = @"标题";
-    cell.detailTextLabel.text = @"子标题的详细描述";
-    cell.imageView.image = [UIImage imageNamed:@"今天选择32"];
+    GoalCell *cell = [GoalCell cellWithTableView:tableView];
     
-    
-    
-    //    cell.accessoryView = bt;
     
     return cell;
+   
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
@@ -117,22 +102,11 @@
 }
 
 
+
+
 #pragma mark - setter方法
 
 
-
-//-(void)setProgressWidth:(CGFloat)progressWidth{
-//    
-//    _progressWidth = progressWidth;
-//    
-//
-////    progressWidth = _progressView.bounds.size.width * (_validTime/86400.0);
-//    progressWidth = 320 * (_validTime/86400.0);
-//    
-//    [UIView animateWithDuration:0.5 animations:^{
-//        [self.progressView setFrame:CGRectMake(0, 0, progressWidth, 16)];
-//    }];
-//}
 
 -(void)updateTime:(NSInteger)time{
     _validTime = time;
@@ -146,9 +120,7 @@
     
 }
 
-//-(void)setProgressLabel:(UILabel *)progressLabel{
-//    progressLabel.text = [NSString stringWithFormat:@"%.2f%%投资",(_validTime/86400.0)*100];
-//}
+
 
 - (UIView *)progressView{
     
@@ -167,5 +139,23 @@
     return _progressView;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

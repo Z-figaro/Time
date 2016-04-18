@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIView *todayView;
 @property (weak, nonatomic) IBOutlet UIView *tomatoView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *Segmented;
+@property (strong, nonatomic) IBOutlet UIButton *addGoalButton; //添加目标按钮
 
 @end
 

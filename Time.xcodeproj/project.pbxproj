@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E55AF141CC52AA20043805D /* GoalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E55AF121CC52AA20043805D /* GoalCell.m */; };
+		6E55AF151CC52AA20043805D /* GoalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E55AF131CC52AA20043805D /* GoalCell.xib */; };
 		EA68ABE01CBF12A600A8BAD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA68ABDF1CBF12A600A8BAD6 /* main.m */; };
 		EA68ABE31CBF12A600A8BAD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA68ABE21CBF12A600A8BAD6 /* AppDelegate.m */; };
 		EA68ABE91CBF12A600A8BAD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA68ABE71CBF12A600A8BAD6 /* Main.storyboard */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E55AF111CC52AA20043805D /* GoalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalCell.h; sourceTree = "<group>"; };
+		6E55AF121CC52AA20043805D /* GoalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalCell.m; sourceTree = "<group>"; };
+		6E55AF131CC52AA20043805D /* GoalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalCell.xib; sourceTree = "<group>"; };
 		EA68ABDB1CBF12A600A8BAD6 /* Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Time.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA68ABDF1CBF12A600A8BAD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA68ABE11CBF12A600A8BAD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +137,9 @@
 			children = (
 				EA68AC031CBF6E5C00A8BAD6 /* TodayView.h */,
 				EA68AC041CBF6E5C00A8BAD6 /* TodayView.m */,
+				6E55AF111CC52AA20043805D /* GoalCell.h */,
+				6E55AF121CC52AA20043805D /* GoalCell.m */,
+				6E55AF131CC52AA20043805D /* GoalCell.xib */,
 			);
 			name = goalView;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E55AF151CC52AA20043805D /* GoalCell.xib in Resources */,
 				EA68ABF11CBF12A600A8BAD6 /* LaunchScreen.storyboard in Resources */,
 				EA68ABFB1CBF395000A8BAD6 /* icon.xcassets in Resources */,
 				EA68ABE91CBF12A600A8BAD6 /* Main.storyboard in Resources */,
@@ -215,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E55AF141CC52AA20043805D /* GoalCell.m in Sources */,
 				EA68ABFE1CBF3F7300A8BAD6 /* TodayVC.m in Sources */,
 				EA68ABEC1CBF12A600A8BAD6 /* Time.xcdatamodeld in Sources */,
 				EA68ABE31CBF12A600A8BAD6 /* AppDelegate.m in Sources */,
