@@ -16,6 +16,7 @@
 		EA68ABFE1CBF3F7300A8BAD6 /* TodayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA68ABFD1CBF3F7300A8BAD6 /* TodayVC.m */; };
 		EA68AC051CBF6E5C00A8BAD6 /* TodayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA68AC041CBF6E5C00A8BAD6 /* TodayView.m */; };
 		EA68AC081CBF6E7B00A8BAD6 /* TomatoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA68AC071CBF6E7B00A8BAD6 /* TomatoView.m */; };
+		EAAAD7BC1CC4BE0E000F4383 /* HProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAAD7BB1CC4BE0E000F4383 /* HProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		EA68AC041CBF6E5C00A8BAD6 /* TodayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayView.m; sourceTree = "<group>"; };
 		EA68AC061CBF6E7B00A8BAD6 /* TomatoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TomatoView.h; sourceTree = "<group>"; };
 		EA68AC071CBF6E7B00A8BAD6 /* TomatoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TomatoView.m; sourceTree = "<group>"; };
+		EAAAD7BA1CC4BE0E000F4383 /* HProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HProgressView.h; sourceTree = "<group>"; };
+		EAAAD7BB1CC4BE0E000F4383 /* HProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +98,10 @@
 			children = (
 				EA68ABFC1CBF3F7300A8BAD6 /* TodayVC.h */,
 				EA68ABFD1CBF3F7300A8BAD6 /* TodayVC.m */,
-				EA68AC031CBF6E5C00A8BAD6 /* TodayView.h */,
-				EA68AC041CBF6E5C00A8BAD6 /* TodayView.m */,
-				EA68AC061CBF6E7B00A8BAD6 /* TomatoView.h */,
-				EA68AC071CBF6E7B00A8BAD6 /* TomatoView.m */,
+				EAAAD7BE1CC4DF89000F4383 /* tomatoView */,
+				EAAAD7BD1CC4DF85000F4383 /* goalView */,
+				EAAAD7BA1CC4BE0E000F4383 /* HProgressView.h */,
+				EAAAD7BB1CC4BE0E000F4383 /* HProgressView.m */,
 			);
 			name = Today;
 			sourceTree = "<group>";
@@ -122,6 +125,24 @@
 			children = (
 			);
 			name = Set;
+			sourceTree = "<group>";
+		};
+		EAAAD7BD1CC4DF85000F4383 /* goalView */ = {
+			isa = PBXGroup;
+			children = (
+				EA68AC031CBF6E5C00A8BAD6 /* TodayView.h */,
+				EA68AC041CBF6E5C00A8BAD6 /* TodayView.m */,
+			);
+			name = goalView;
+			sourceTree = "<group>";
+		};
+		EAAAD7BE1CC4DF89000F4383 /* tomatoView */ = {
+			isa = PBXGroup;
+			children = (
+				EA68AC061CBF6E7B00A8BAD6 /* TomatoView.h */,
+				EA68AC071CBF6E7B00A8BAD6 /* TomatoView.m */,
+			);
+			name = tomatoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +219,7 @@
 				EA68ABEC1CBF12A600A8BAD6 /* Time.xcdatamodeld in Sources */,
 				EA68ABE31CBF12A600A8BAD6 /* AppDelegate.m in Sources */,
 				EA68AC051CBF6E5C00A8BAD6 /* TodayView.m in Sources */,
+				EAAAD7BC1CC4BE0E000F4383 /* HProgressView.m in Sources */,
 				EA68AC081CBF6E7B00A8BAD6 /* TomatoView.m in Sources */,
 				EA68ABE01CBF12A600A8BAD6 /* main.m in Sources */,
 			);
@@ -346,6 +368,7 @@
 				EA68ABF71CBF12A600A8BAD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
