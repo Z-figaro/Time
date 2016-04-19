@@ -18,6 +18,9 @@
 		EA68ABFE1CBF3F7300A8BAD6 /* TodayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA68ABFD1CBF3F7300A8BAD6 /* TodayVC.m */; };
 		EA68AC051CBF6E5C00A8BAD6 /* TodayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA68AC041CBF6E5C00A8BAD6 /* TodayView.m */; };
 		EA68AC081CBF6E7B00A8BAD6 /* TomatoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA68AC071CBF6E7B00A8BAD6 /* TomatoView.m */; };
+		EA9720CF1CC5B60400D333A1 /* AddGoalView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9720CE1CC5B60400D333A1 /* AddGoalView.m */; };
+		EA9720D41CC5CB0C00D333A1 /* goalDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9720D31CC5CB0C00D333A1 /* goalDetailView.m */; };
+		EA9720D71CC5CB3600D333A1 /* planDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9720D61CC5CB3600D333A1 /* planDetailView.m */; };
 		EAAAD7BC1CC4BE0E000F4383 /* HProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAAD7BB1CC4BE0E000F4383 /* HProgressView.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,12 @@
 		EA68AC041CBF6E5C00A8BAD6 /* TodayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayView.m; sourceTree = "<group>"; };
 		EA68AC061CBF6E7B00A8BAD6 /* TomatoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TomatoView.h; sourceTree = "<group>"; };
 		EA68AC071CBF6E7B00A8BAD6 /* TomatoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TomatoView.m; sourceTree = "<group>"; };
+		EA9720CD1CC5B60400D333A1 /* AddGoalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGoalView.h; sourceTree = "<group>"; };
+		EA9720CE1CC5B60400D333A1 /* AddGoalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGoalView.m; sourceTree = "<group>"; };
+		EA9720D21CC5CB0C00D333A1 /* goalDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goalDetailView.h; sourceTree = "<group>"; };
+		EA9720D31CC5CB0C00D333A1 /* goalDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = goalDetailView.m; sourceTree = "<group>"; };
+		EA9720D51CC5CB3600D333A1 /* planDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = planDetailView.h; sourceTree = "<group>"; };
+		EA9720D61CC5CB3600D333A1 /* planDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = planDetailView.m; sourceTree = "<group>"; };
 		EAAAD7BA1CC4BE0E000F4383 /* HProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HProgressView.h; sourceTree = "<group>"; };
 		EAAAD7BB1CC4BE0E000F4383 /* HProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,12 +83,10 @@
 		EA68ABDD1CBF12A600A8BAD6 /* Time */ = {
 			isa = PBXGroup;
 			children = (
-				EA68AC021CBF400300A8BAD6 /* Set */,
-				EA68AC011CBF3FF200A8BAD6 /* Sum */,
-				EA68AC001CBF3FE100A8BAD6 /* Everyday */,
-				EA68ABFF1CBF3FAE00A8BAD6 /* Today */,
-				EA68ABE11CBF12A600A8BAD6 /* AppDelegate.h */,
-				EA68ABE21CBF12A600A8BAD6 /* AppDelegate.m */,
+				EA9720DB1CC6017600D333A1 /* View */,
+				EA9720D91CC6013A00D333A1 /* Model */,
+				EA9720DA1CC6013A00D333A1 /* Source */,
+				EA9720D81CC6009A00D333A1 /* appDelegate */,
 				EA68ABE71CBF12A600A8BAD6 /* Main.storyboard */,
 				EA68ABEF1CBF12A600A8BAD6 /* LaunchScreen.storyboard */,
 				EA68ABFA1CBF395000A8BAD6 /* icon.xcassets */,
@@ -103,12 +110,13 @@
 			children = (
 				EA68ABFC1CBF3F7300A8BAD6 /* TodayVC.h */,
 				EA68ABFD1CBF3F7300A8BAD6 /* TodayVC.m */,
+				EA9720D11CC5CA9100D333A1 /* addGoalView */,
+				EA9720D01CC5B61300D333A1 /* progressView */,
 				EAAAD7BE1CC4DF89000F4383 /* tomatoView */,
 				EAAAD7BD1CC4DF85000F4383 /* goalView */,
-				EAAAD7BA1CC4BE0E000F4383 /* HProgressView.h */,
-				EAAAD7BB1CC4BE0E000F4383 /* HProgressView.m */,
 			);
 			name = Today;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EA68AC001CBF3FE100A8BAD6 /* Everyday */ = {
@@ -116,6 +124,7 @@
 			children = (
 			);
 			name = Everyday;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EA68AC011CBF3FF200A8BAD6 /* Sum */ = {
@@ -123,6 +132,7 @@
 			children = (
 			);
 			name = Sum;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EA68AC021CBF400300A8BAD6 /* Set */ = {
@@ -130,6 +140,63 @@
 			children = (
 			);
 			name = Set;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EA9720D01CC5B61300D333A1 /* progressView */ = {
+			isa = PBXGroup;
+			children = (
+				EAAAD7BA1CC4BE0E000F4383 /* HProgressView.h */,
+				EAAAD7BB1CC4BE0E000F4383 /* HProgressView.m */,
+			);
+			name = progressView;
+			sourceTree = "<group>";
+		};
+		EA9720D11CC5CA9100D333A1 /* addGoalView */ = {
+			isa = PBXGroup;
+			children = (
+				EA9720CD1CC5B60400D333A1 /* AddGoalView.h */,
+				EA9720CE1CC5B60400D333A1 /* AddGoalView.m */,
+				EA9720D21CC5CB0C00D333A1 /* goalDetailView.h */,
+				EA9720D31CC5CB0C00D333A1 /* goalDetailView.m */,
+				EA9720D51CC5CB3600D333A1 /* planDetailView.h */,
+				EA9720D61CC5CB3600D333A1 /* planDetailView.m */,
+			);
+			name = addGoalView;
+			sourceTree = "<group>";
+		};
+		EA9720D81CC6009A00D333A1 /* appDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EA68ABE11CBF12A600A8BAD6 /* AppDelegate.h */,
+				EA68ABE21CBF12A600A8BAD6 /* AppDelegate.m */,
+			);
+			name = appDelegate;
+			sourceTree = "<group>";
+		};
+		EA9720D91CC6013A00D333A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA9720DA1CC6013A00D333A1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EA9720DB1CC6017600D333A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA68AC021CBF400300A8BAD6 /* Set */,
+				EA68AC011CBF3FF200A8BAD6 /* Sum */,
+				EA68AC001CBF3FE100A8BAD6 /* Everyday */,
+				EA68ABFF1CBF3FAE00A8BAD6 /* Today */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EAAAD7BD1CC4DF85000F4383 /* goalView */ = {
@@ -225,10 +292,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E55AF141CC52AA20043805D /* GoalCell.m in Sources */,
+				EA9720CF1CC5B60400D333A1 /* AddGoalView.m in Sources */,
 				EA68ABFE1CBF3F7300A8BAD6 /* TodayVC.m in Sources */,
 				EA68ABEC1CBF12A600A8BAD6 /* Time.xcdatamodeld in Sources */,
+				EA9720D41CC5CB0C00D333A1 /* goalDetailView.m in Sources */,
 				EA68ABE31CBF12A600A8BAD6 /* AppDelegate.m in Sources */,
 				EA68AC051CBF6E5C00A8BAD6 /* TodayView.m in Sources */,
+				EA9720D71CC5CB3600D333A1 /* planDetailView.m in Sources */,
 				EAAAD7BC1CC4BE0E000F4383 /* HProgressView.m in Sources */,
 				EA68AC081CBF6E7B00A8BAD6 /* TomatoView.m in Sources */,
 				EA68ABE01CBF12A600A8BAD6 /* main.m in Sources */,

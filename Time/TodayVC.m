@@ -22,9 +22,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
     [_Segmented addTarget:self action:@selector(click) forControlEvents:UIControlEventValueChanged];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    self . tabBarController . tabBar . hidden = NO ;
+}
 
 
 
@@ -32,8 +38,9 @@
     
     switch ( _Segmented.selectedSegmentIndex) {
         case 0:{
+            
        
-//            [self todayView];
+
             _todayView.hidden = NO;
             _tomatoView.hidden = YES;
    
