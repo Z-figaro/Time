@@ -91,7 +91,6 @@
 				EA68ABEF1CBF12A600A8BAD6 /* LaunchScreen.storyboard */,
 				EA68ABFA1CBF395000A8BAD6 /* icon.xcassets */,
 				EA68ABF21CBF12A600A8BAD6 /* Info.plist */,
-				EA68ABEA1CBF12A600A8BAD6 /* Time.xcdatamodeld */,
 				EA68ABDE1CBF12A600A8BAD6 /* Supporting Files */,
 			);
 			path = Time;
@@ -177,6 +176,7 @@
 		EA9720D91CC6013A00D333A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA68ABEA1CBF12A600A8BAD6 /* Time.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -459,7 +459,8 @@
 				EA68ABEB1CBF12A600A8BAD6 /* Time.xcdatamodel */,
 			);
 			currentVersion = EA68ABEB1CBF12A600A8BAD6 /* Time.xcdatamodel */;
-			path = Time.xcdatamodeld;
+			name = Time.xcdatamodeld;
+			path = ../Time.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -27,6 +27,7 @@
     [_Segmented addTarget:self action:@selector(click) forControlEvents:UIControlEventValueChanged];
 }
 
+
 -(void)viewWillAppear:(BOOL)animated
 {
     self . tabBarController . tabBar . hidden = NO ;

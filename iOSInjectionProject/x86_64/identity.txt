@@ -1,0 +1,2 @@
+/Users/aidspp/Library/Developer/Xcode/DerivedData/Time-exuxkqgijtpoydhdywhzqxiknltm/Build/Products/Debug-iphonesimulator/Time.app
+

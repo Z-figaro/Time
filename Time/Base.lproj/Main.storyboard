@@ -423,6 +423,10 @@
         <scene sceneID="kEU-QM-pAj">
             <objects>
                 <viewController id="oeN-Kv-sgl" customClass="goalDetailView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lwQ-R4-DBw"/>
+                        <viewControllerLayoutGuide type="bottom" id="lQM-Cd-Czz"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rft-FK-euZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="309"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -473,6 +477,10 @@
         <scene sceneID="28E-FS-KUP">
             <objects>
                 <viewController id="7Ga-yu-u38" customClass="planDetailView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pQb-oB-jlH"/>
+                        <viewControllerLayoutGuide type="bottom" id="T8j-NY-1Ty"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yG8-1y-2zr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="309"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
